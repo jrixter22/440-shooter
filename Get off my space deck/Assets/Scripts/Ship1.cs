@@ -33,13 +33,12 @@ public class Ship1 : MonoBehaviour {
 			transform.position = move;
 			if(distance < 1f){
 				speed = 0f;
-				if(Time.fixedTime % 7 == 0){
+				/*if(Time.fixedTime % 6 == 0){
 					Instantiate (projectile, node.transform.position, node.transform.rotation);
-				}
-				if(friend/*Time.fixedTime == 30 || Time.fixedTime == 50*/){
+				}*/
+				if(Time.fixedTime % 10 == 0){
 					check1 = false;
 					check2 = true;
-					friend = false;
 				}
 			}
 		}
@@ -51,13 +50,12 @@ public class Ship1 : MonoBehaviour {
 			transform.position = move;
 			if(distance < 1f){
 				speed = 0f;
-				if(Time.fixedTime % 7 == 0){
+				/*if(Time.fixedTime % 6 == 0){
 					Instantiate (projectile, node.transform.position, node.transform.rotation);
-				}
-				if(friend/*Time.fixedTime == 30 || Time.fixedTime == 50*/){
+				}*/
+				if(Time.fixedTime % 10 == 0){
 					check2 = false;
 					check3 = true;
-					friend = false;
 				}
 			}
 		}
@@ -69,9 +67,9 @@ public class Ship1 : MonoBehaviour {
 			transform.position = move;
 			if(distance < 1f){
 				speed = 0f;
-				if(Time.fixedTime % 7 == 0){
+				/*if(Time.fixedTime % 6 == 0){
 					Instantiate (projectile, node.transform.position, node.transform.rotation);
-				}
+				}*/
 				/*if(friend/*Time.fixedTime == 30 || Time.fixedTime == 50*){
 					check2 = true;
 					check3 = false;
@@ -87,8 +85,8 @@ public class Ship1 : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col)
 	{
-		if (col.gameObject.tag == "Ship") {
-			friend = true;
+		if (col.gameObject.tag == "Attack") {
+			die = true;
 		} 
 	}
 }

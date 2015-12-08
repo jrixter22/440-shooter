@@ -3,17 +3,24 @@ using System.Collections;
 
 public class ShieldCollision : MonoBehaviour {
 	public GameObject shield;
-	//public GameObject shieldCollision;
+	public int shieldStrength = 5;
 	public Transform node;
 	void Start(){
-		//Instantiate (shieldCollision, node.transform.position, node.transform.rotation);
+	}
+
+	void Update(){
+		if (shieldStrength == 0) {
+			Destroy(gameObject);
+		}
 	}
 
 	void OnCollisionEnter(Collision col)
 	{
-		/*MeshRenderer otherScript = GetComponent<MeshRenderer>();
-		otherScript.renderer.enabled = true;*/
-		Instantiate (shield, node.transform.position, node.transform.rotation);
-		Destroy (gameObject);
+		if (col.gameObject.tag == "Projectile") {
+			//Debug.Log(shieldStrength);
+			Instantiate (shield, node.transform.position, node.transform.rotation);
+			shieldStrength--;
+			Debug.Log(shieldStrength);
+		}
 	}
 }

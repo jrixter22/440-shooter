@@ -32,13 +32,13 @@ public class ShipSpawn : MonoBehaviour {
 		//Spawns the ships depending on how long the game has been going for
 		if (numShips < maxShips) {
 			if (spawnID == 1) {
-				if(Time.fixedTime == 10 || Time.fixedTime == 30 || Time.fixedTime == 50){
+				if(Time.fixedTime % 10 == 0 && Time.fixedTime != 0/*|| Time.fixedTime == 30 || Time.fixedTime == 50*/){
 					Instantiate(ship1,node[0].transform.position,node[0].transform.rotation);
 					numShips++;
 				}
 			}
 			else if (spawnID == 2) {
-				if(Time.fixedTime == 20 || Time.fixedTime == 40){
+				if(Time.fixedTime % 20 == 0 && Time.fixedTime != 0/*|| Time.fixedTime == 40*/){
 					Instantiate(ship2,node[1].transform.position,node[1].transform.rotation);
 					numShips++;
 				}

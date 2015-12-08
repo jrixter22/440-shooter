@@ -20,23 +20,73 @@ public class ProjectileSpawn : MonoBehaviour {
 		//int randint = Random.Range (1, 4);
 		if (Time.fixedTime % randTime == 0 && Time.fixedTime != 0) {
 			if(SpawnID == 1){
+				/*if(randint == 1){
+					Instantiate(Projectile[0],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else if(randint == 2){
+					Instantiate(Projectile[1],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else {
+					Instantiate(Projectile[2],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				}*/
 				Instantiate(Projectile,node[0].transform.position,node[0].transform.rotation);
 				randTime = Random.Range (minRange, maxRange);
 			}
 			else if(SpawnID == 2){
-				Instantiate(Projectile,node[1].transform.position,node[1].transform.rotation);
+				/*if(randint == 1){
+					Instantiate(Projectile[0],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else if(randint == 2){
+					Instantiate(Projectile[1],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else {
+					Instantiate(Projectile[2],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				}*/
+				Instantiate(Projectile,node[0].transform.position,node[0].transform.rotation);
 				randTime = Random.Range (minRange, maxRange);
 			}
 			else if(SpawnID == 3){
-				Instantiate(Projectile,node[2].transform.position,node[2].transform.rotation);
+				/*if(randint == 1){
+					Instantiate(Projectile[0],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else if(randint == 2){
+					Instantiate(Projectile[1],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else {
+					Instantiate(Projectile[2],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				}*/
+				Instantiate(Projectile,node[0].transform.position,node[0].transform.rotation);
 				randTime = Random.Range (minRange, maxRange);
 			}
 			else if(SpawnID == 4){
-				Instantiate(Projectile,node[3].transform.position,node[3].transform.rotation);
+				/*if(randint == 1){
+					Instantiate(Projectile[0],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else if(randint == 2){
+					Instantiate(Projectile[1],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else {
+					Instantiate(Projectile[2],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				}*/
+				Instantiate(Projectile,node[0].transform.position,node[0].transform.rotation);
 				randTime = Random.Range (minRange, maxRange);
 			}
 			else if(SpawnID == 5){
-				Instantiate(Projectile,node[4].transform.position,node[4].transform.rotation);
+				/*if(randint == 1){
+					Instantiate(Projectile[0],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else if(randint == 2){
+					Instantiate(Projectile[1],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				} else {
+					Instantiate(Projectile[2],node[0].transform.position,node[0].transform.rotation);
+					randTime = Random.Range (minRange, maxRange);
+				}*/
+				Instantiate(Projectile,node[0].transform.position,node[0].transform.rotation);
 				randTime = Random.Range (minRange, maxRange);
 			}
 		}
